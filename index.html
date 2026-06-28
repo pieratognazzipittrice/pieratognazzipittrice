@@ -1,0 +1,55 @@
+---
+layout: default
+title: Opere
+nav_transparent: true
+body_class: home
+description: "Piera Tognazzi, pittrice — dipinti ad olio su tela. Sfoglia la raccolta di paesaggi, nature morte, fiori e ritratti."
+---
+
+<section class="hero" style="background-image: url('{{ '/assets/images/hero.jpg' | relative_url }}');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Piera Tognazzi · pittrice</p>
+    <h1 class="hero-title">Dipinti ad olio su tela</h1>
+    <a class="hero-cta" href="#opere">Scopri le opere</a>
+  </div>
+  <a class="hero-scroll" href="#opere" aria-label="Scorri verso le opere"><span></span></a>
+</section>
+
+<section class="opere-strip" id="opere">
+  <div class="section-head">
+    <h2>La raccolta</h2>
+    <p>Scorri lateralmente per sfogliare i quadri, oppure clicca un'opera per ingrandirla.</p>
+  </div>
+
+  <div class="strip-wrap">
+    <button class="strip-arrow strip-arrow-prev" aria-label="Scorri indietro" data-strip-prev>&#8249;</button>
+    <div class="strip" id="strip">
+      {% for opera in site.data.opere.opere %}
+      <figure class="strip-item"
+              data-full="{{ '/assets/images/opere/' | append: opera.file | relative_url }}"
+              data-title="{{ opera.titolo }}"
+              data-meta="{{ opera.tecnica }}{% if opera.misure %} · {{ opera.misure }}{% endif %}{% if opera.anno %} · {{ opera.anno }}{% endif %}"
+              data-gallery="home">
+        <div class="strip-frame">
+          <img src="{{ '/assets/images/opere/' | append: opera.file | relative_url }}" alt="{{ opera.titolo }}" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="op-title">{{ opera.titolo }}</span>
+          <span class="op-meta">{{ opera.tecnica }}{% if opera.anno %}, {{ opera.anno }}{% endif %}</span>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+    <button class="strip-arrow strip-arrow-next" aria-label="Scorri avanti" data-strip-next>&#8250;</button>
+  </div>
+</section>
+
+<section class="intro-band">
+  <div class="intro-inner">
+    <div class="intro-actions">
+      <a class="btn" href="{{ '/gallerie/' | relative_url }}">Sfoglia le gallerie</a>
+      <a class="btn btn-ghost" href="{{ '/chi-sono/' | relative_url }}">Chi sono</a>
+    </div>
+  </div>
+</section>

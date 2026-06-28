@@ -1,0 +1,43 @@
+---
+layout: default
+title: Gallerie
+permalink: /gallerie/
+description: "Le opere di Piera Tognazzi divise per tema: paesaggi, nature morte, fiori e ritratti."
+---
+
+<div class="page-head">
+  <h1>Le gallerie</h1>
+  <p class="page-sub">I dipinti raccolti per tema. Clicca un'opera per ingrandirla.</p>
+</div>
+
+<nav class="cat-filter">
+  {% for cat in site.data.opere.categorie %}
+  <a href="#{{ cat.id }}">{{ cat.nome }}</a>
+  {% endfor %}
+</nav>
+
+{% for cat in site.data.opere.categorie %}
+  {% assign opere_cat = site.data.opere.opere | where: "categoria", cat.id %}
+  {% if opere_cat.size > 0 %}
+  <section class="cat-section" id="{{ cat.id }}">
+    <h2 class="cat-title">{{ cat.nome }}</h2>
+    <div class="grid">
+      {% for opera in opere_cat %}
+      <figure class="grid-item"
+              data-full="{{ '/assets/images/opere/' | append: opera.file | relative_url }}"
+              data-title="{{ opera.titolo }}"
+              data-meta="{{ opera.tecnica }}{% if opera.misure %} · {{ opera.misure }}{% endif %}{% if opera.anno %} · {{ opera.anno }}{% endif %}"
+              data-gallery="{{ cat.id }}">
+        <div class="grid-frame">
+          <img src="{{ '/assets/images/opere/' | append: opera.file | relative_url }}" alt="{{ opera.titolo }}" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="op-title">{{ opera.titolo }}</span>
+          <span class="op-meta">{{ opera.tecnica }}{% if opera.misure %} · {{ opera.misure }}{% endif %}{% if opera.anno %} · {{ opera.anno }}{% endif %}</span>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,39 @@
+# Sito vetrina di Piera Tognazzi, pittrice
+title: Piera Tognazzi
+tagline: Dipinti ad olio su tela
+description: >-
+  Piera Tognazzi, pittrice. Una raccolta di dipinti ad olio su tela:
+  paesaggi, nature morte, fiori e ritratti, nati dalla passione per la pittura.
+author: Piera Tognazzi
+email: ""
+
+# Su GitHub Pages il sito sarà pubblicato all'indirizzo:
+# https://pieratognazzipittrice.github.io/pieratognazzipittrice/
+url: "https://pieratognazzipittrice.github.io"
+baseurl: "/pieratognazzipittrice"
+
+# Contatti mostrati nel footer (modificali pure)
+contatti:
+  email: ""
+  citta: "Botticino (BS)"
+  instagram: ""
+
+# Voci del menu di navigazione
+navigazione:
+  - nome: Opere
+    url: /
+  - nome: Gallerie
+    url: /gallerie/
+  - nome: Chi sono
+    url: /chi-sono/
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - anteprima.html
+  - vendor

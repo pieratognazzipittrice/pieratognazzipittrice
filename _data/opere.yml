@@ -1,0 +1,101 @@
+# =============================================================
+#  ELENCO DELLE OPERE
+#  Per aggiungere un quadro: copia un blocco "- titolo: ..." qui sotto,
+#  metti la foto in  assets/images/opere/  e scrivi il nome del file in "file".
+#  La "categoria" deve corrispondere a uno degli id in "categorie".
+# =============================================================
+
+categorie:
+  - id: paesaggi
+    nome: Paesaggi
+  - id: natura
+    nome: Nature morte
+  - id: fiori
+    nome: Fiori
+  - id: ritratti
+    nome: Ritratti
+
+opere:
+  - titolo: "Campi al tramonto"
+    file: campi-al-tramonto.jpg
+    categoria: paesaggi
+    tecnica: Olio su tela
+    misure: 50 × 70 cm
+    anno: 2023
+
+  - titolo: "Colline d'autunno"
+    file: colline-dautunno.jpg
+    categoria: paesaggi
+    tecnica: Olio su tela
+    misure: 40 × 50 cm
+    anno: 2022
+
+  - titolo: "Lago in quiete"
+    file: lago-in-quiete.jpg
+    categoria: paesaggi
+    tecnica: Olio su tela
+    misure: 60 × 80 cm
+    anno: 2024
+
+  - titolo: "Frutta e brocca"
+    file: frutta-e-brocca.jpg
+    categoria: natura
+    tecnica: Olio su tela
+    misure: 40 × 50 cm
+    anno: 2023
+
+  - titolo: "Pane e vino"
+    file: pane-e-vino.jpg
+    categoria: natura
+    tecnica: Olio su tela
+    misure: 50 × 60 cm
+    anno: 2021
+
+  - titolo: "Cesto di mele"
+    file: cesto-di-mele.jpg
+    categoria: natura
+    tecnica: Olio su tela
+    misure: 50 × 50 cm
+    anno: 2022
+
+  - titolo: "Papaveri rossi"
+    file: papaveri-rossi.jpg
+    categoria: fiori
+    tecnica: Olio su tela
+    misure: 40 × 50 cm
+    anno: 2024
+
+  - titolo: "Vaso di girasoli"
+    file: vaso-di-girasoli.jpg
+    categoria: fiori
+    tecnica: Olio su tela
+    misure: 50 × 70 cm
+    anno: 2023
+
+  - titolo: "Rose di giugno"
+    file: rose-di-giugno.jpg
+    categoria: fiori
+    tecnica: Olio su tela
+    misure: 50 × 40 cm
+    anno: 2022
+
+  - titolo: "Donna alla finestra"
+    file: donna-alla-finestra.jpg
+    categoria: ritratti
+    tecnica: Olio su tela
+    misure: 40 × 50 cm
+    anno: 2021
+
+  - titolo: "Sguardo"
+    file: sguardo.jpg
+    categoria: ritratti
+    tecnica: Olio su tela
+    misure: 30 × 40 cm
+    anno: 2023
+
+  - titolo: "Volto antico"
+    file: volto-antico.jpg
+    categoria: ritratti
+    tecnica: Olio su tela
+    misure: 40 × 50 cm
+    anno: 2024

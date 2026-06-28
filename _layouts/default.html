@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+{% include head.html %}
+<body class="{{ page.body_class }}">
+
+  {% include header.html %}
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <!-- Lightbox per ingrandire le opere -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lb-close" aria-label="Chiudi">&times;</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Precedente">&#8249;</button>
+    <figure class="lb-figure">
+      <img src="" alt="" id="lb-img">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Successiva">&#8250;</button>
+  </div>
+
+  <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

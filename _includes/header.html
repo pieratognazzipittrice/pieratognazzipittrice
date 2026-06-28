@@ -1,0 +1,17 @@
+{% assign trasparente = page.nav_transparent %}
+<header class="site-header {% if trasparente %}is-transparent{% endif %}" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Apri il menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      {% for voce in site.navigazione %}
+        {% assign target = voce.url | relative_url %}
+        <a href="{{ target }}" {% if page.url == voce.url %}class="active"{% endif %}>{{ voce.nome }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
