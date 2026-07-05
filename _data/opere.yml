@@ -8,94 +8,31 @@
 categorie:
   - id: paesaggi
     nome: Paesaggi
-  - id: natura
-    nome: Nature morte
-  - id: fiori
-    nome: Fiori
   - id: ritratti
     nome: Ritratti
 
 opere:
-  - titolo: "Campi al tramonto"
-    file: campi-al-tramonto.jpg
+  - titolo: "Casolare lungo il sentiero"
+    file: casolare-lungo-il-sentiero.jpg
     categoria: paesaggi
-    tecnica: Olio su tela
-    misure: 50 × 70 cm
-    anno: 2023
+    tecnica: Olio e acrilico su tela
 
-  - titolo: "Colline d'autunno"
-    file: colline-dautunno.jpg
+  - titolo: "Bosco d'autunno"
+    file: bosco-dautunno.jpg
     categoria: paesaggi
-    tecnica: Olio su tela
-    misure: 40 × 50 cm
-    anno: 2022
+    tecnica: Olio e acrilico su tela
 
-  - titolo: "Lago in quiete"
-    file: lago-in-quiete.jpg
+  - titolo: "Neve tra i filari"
+    file: neve-tra-i-filari.jpg
     categoria: paesaggi
-    tecnica: Olio su tela
-    misure: 60 × 80 cm
-    anno: 2024
+    tecnica: Olio e acrilico su tela
 
-  - titolo: "Frutta e brocca"
-    file: frutta-e-brocca.jpg
-    categoria: natura
-    tecnica: Olio su tela
-    misure: 40 × 50 cm
-    anno: 2023
+  - titolo: "Sentiero nella neve"
+    file: sentiero-nella-neve.jpg
+    categoria: paesaggi
+    tecnica: Olio e acrilico su tela
 
-  - titolo: "Pane e vino"
-    file: pane-e-vino.jpg
-    categoria: natura
-    tecnica: Olio su tela
-    misure: 50 × 60 cm
-    anno: 2021
-
-  - titolo: "Cesto di mele"
-    file: cesto-di-mele.jpg
-    categoria: natura
-    tecnica: Olio su tela
-    misure: 50 × 50 cm
-    anno: 2022
-
-  - titolo: "Papaveri rossi"
-    file: papaveri-rossi.jpg
-    categoria: fiori
-    tecnica: Olio su tela
-    misure: 40 × 50 cm
-    anno: 2024
-
-  - titolo: "Vaso di girasoli"
-    file: vaso-di-girasoli.jpg
-    categoria: fiori
-    tecnica: Olio su tela
-    misure: 50 × 70 cm
-    anno: 2023
-
-  - titolo: "Rose di giugno"
-    file: rose-di-giugno.jpg
-    categoria: fiori
-    tecnica: Olio su tela
-    misure: 50 × 40 cm
-    anno: 2022
-
-  - titolo: "Donna alla finestra"
-    file: donna-alla-finestra.jpg
+  - titolo: "Ritratto"
+    file: ritratto.jpg
     categoria: ritratti
-    tecnica: Olio su tela
-    misure: 40 × 50 cm
-    anno: 2021
-
-  - titolo: "Sguardo"
-    file: sguardo.jpg
-    categoria: ritratti
-    tecnica: Olio su tela
-    misure: 30 × 40 cm
-    anno: 2023
-
-  - titolo: "Volto antico"
-    file: volto-antico.jpg
-    categoria: ritratti
-    tecnica: Olio su tela
-    misure: 40 × 50 cm
-    anno: 2024
+    tecnica: Olio e acrilico su tela
